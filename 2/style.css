@@ -1,0 +1,13 @@
+
+    figcaption {
+      font-size: 1.2em;
+    }
+    p.left {
+      text-align: left;
+      border-left: 4px dashed BlueViolet;
+    }
+     ol {
+      text-align: left;
+      font-size: 1.2em;
+      color: DarkGreen;
+    }
