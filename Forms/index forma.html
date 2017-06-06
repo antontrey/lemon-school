@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div class="forma">
+		<forma action='#'>
+			<h1>Fill the form</h1>
+			<div class="group1">
+			    <label for="name">Your Name</label> <!-- лейбл это наш заголовок и дальше везде такой же -->
+			    <input type="text" placeholder="John" id="name" name="name"> <!-- тут мы задали текстовое поле -->
+			</div>
+			<div class="group1">
+			    <label for="surname">Your Surname</label>
+			    <input type="text" placeholder="Doe" id="surname" name="surname"> <!-- тут мы задали текстовое поле -->
+			</div>
+			<div class="group1">
+			    <label for="email">Your Email</label>
+			    <input type="text" placeholder="mail@example.com" id="email" name="email"> <!-- тут мы задали текстовое поле -->
+			</div>
+			<div class="group1">
+			    <label for="password">Your Password</label>
+			    <input type="password" placeholder="Password" id="password" name="password"> <!-- тут мы задали поле пароля -->
+			</div>
+			<div class="group1">
+			    <label for="comment">Few words about You</label>
+			    <textarea placeholder="Im awesome!" id="comment" name="comment"></textarea> <!-- тут мы задали текстовое поле с множеством строк обратить внимание что не инпут а текст ареа -->
+			</div>
+
+			<div class="group2">
+			  	<label for="country">Your Country</label>
+			  	<select name="country" id="country">       <!-- тут мы задали поле с выпадающим списеом  конструкция <select><option>...<option></select> -->
+			        <option value="ua">Ukraine</option>
+			        <option value="usa">USA</option>
+			        <option value="au">Australia</option>
+			        <option value="ge">Germany</option>
+			  	</select>
+			</div>
+			<div class="group2">
+			    <label for="gender">Your gender</label>
+			    <div class="group3">
+				    <label>                                                         
+				        <input type="radio" name="gender" value="male"> Male <!-- тут мы задали поле выбора типа радиобатон -->
+				    </label>
+				    <label>
+				        <input type="radio" name="gender" value="female"> Female
+				    </label>
+				    <label>
+				        <input type="radio" name="gender" value="other"> Other
+				    </label>
+			    </div>
+			</div>
+			<div>
+			    <label>
+			      <input type="checkbox" name="newsseller"> Subscribe to newsseller <!-- тут мы задали поле подтверждения типа чекбокс -->
+			    </label>
+			</div>
+			<button type="submit">Submit</button>  <!-- тут мы задали кнопку отправки формы -->
+		</forma>
+	</div>
+	<style type="text/css">
+		.forma
+		{
+			width: 500px; /*ширина формы*/
+		    margin: 10px auto; /*выравивание по центру*/
+		    border: 1px solid #ccc; /*рампа серая в 1 пиксель*/
+		    border-radius: 5px; /*закругления углов формы*/
+		    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.2); /*тень формы*/
+		    padding: 10px; /*отступ внутри формы от краев формы*/
+		    font-family: 'Open Sans', sans-serif; /*шрифт формы*/
+		    font-size: 16px; /*размер шрифта*/
+		    font-weight: 400; /*жирность шрифта*/
+		}
+		.group1
+		{
+			margin: 10px 0;
+		}
+		.group2
+		{
+			border-top: 1px solid #ccc;
+		    margin-top: 10px;
+		    padding-top: 10px;
+		}
+		.group3 
+		{
+		    margin-bottom: 10px;
+		    padding-bottom: 10px;
+		    border-bottom: 1px solid #ccc;
+		}
+		.group1 label, .group2 label
+		{
+		    display: inline-block;
+		    margin-bottom: 5px;
+		}
+		.group3 label 
+		{
+		    display: inline-block;
+		    margin-right: 10px;
+		}
+		input[type="text"], input[type="password"] /* задаем стили полей текстового и поля пароля*/
+		{
+		    display: inline-block;
+		    width: 98%;
+		    font-family: 'Open Sans', sans-serif;
+		    font-size: 16px;
+		    font-weight: 400;
+		    padding: 5px;
+		    border: 1px solid #ccc;
+		    border-radius: 3px;
+
+		}
+		textarea  /* задаем стили могострочного поля*/ 
+		{
+		    display: block;
+		    width: 98%;
+		    font-family: 'Open Sans', sans-serif;
+		    font-size: 16px;
+		    font-weight: 400;
+		    padding: 5px;
+		    border: 1px solid #ccc;
+		    border-radius: 3px;
+		    resize: vertical;
+		}
+		select  /* задаем стили поля с выпадающим списком*/
+		{
+		    display: inline-block;
+		    width: 100%;
+		    font-family: 'Open Sans', sans-serif;
+		    font-size: 16px;
+		    font-weight: 400;
+		    padding: 5px;
+		    border: 1px solid #ccc;
+		    border-radius: 3px;
+		}
+		button  /* задаем стили кнопки*/
+		{
+		    display: inline-block;
+		    width: 100%;
+		    background-color: #ccc;
+		    border: 1px solid #b3b3b3;
+		    font-family: 'Open Sans', sans-serif;
+		    font-size: 16px;
+		    font-weight: 400;
+		    padding: 5px;
+		    margin: 10px 0;
+		    border-radius: 3px;
+		    cursor: pointer;
+		}
+	</style>
+</body>
+</html>
