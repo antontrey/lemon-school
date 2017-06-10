@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Форма</title>
+</head>
+ <meta charset="utf-8">
+<body>
+	<div class="forma">
+		<forma action='#'>
+			<div class="group1">
+			    <label for="name">Ваше Имя</label> 
+			    <input type="text" placeholder="Например, Иванов Иван Иванович" id="name" name="name"> 
+			</div>
+			<div class="group1">
+			    <label for="surname">Ваш род деятелности</label>
+			    <input type="text" placeholder="Например,Выращиваю огурцы" id="surname" name="surname"> 
+			</div>
+			
+			<div class="group2">
+			    <label for="gender">Согласны ли Вы с условиями?</label>
+			    <div class="group3">
+				    <label>                                                         
+				        <input type="radio" name="gender" value="Категорически ДА!"> Категорически ДА! <!-- тут мы задали поле выбора типа радиобатон -->
+				    </label>
+				    <label>
+				        <input type="radio" name="gender" value="Категорически НЕТ!"> Категорически НЕТ!
+				    </label>
+			    </div>
+			</div>
+			<button type="submit">Отправить</button>  
+		</forma>
+	</div>
+	<style type="text/css">
+		.forma
+		{
+			width: 500px; 
+		    margin: 10px auto; 
+		    border: 1px solid #ccc; 
+		    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.2); 
+		    padding: 15px; 
+		    font-family: 'Open Sans', sans-serif; 
+		    font-size: 16px; 
+		    font-weight: 400; 
+		}
+		.group1
+		{
+			margin: 10px 0;
+		}
+		.group2
+		{
+			border-top: 1px solid #ccc;
+		    margin-top: 10px;
+		    padding-top: 10px;
+		}
+		.group3 
+		{
+		    margin-bottom: 10px;
+		    padding-bottom: 10px;
+		    border-bottom: 1px solid #ccc;
+		}
+		.group1 label, .group2 label
+		{
+		    display: inline-block;
+		    margin-bottom: 5px;
+		}
+		.group3 label 
+		{
+		    display: inline-block;
+		    margin-right: 10px;
+		}
+		input[type="text"] 
+		{
+		    display: inline-block;
+		    width: 98%;
+		    font-size: 16px;
+		    font-weight: 400;
+		    padding: 5px;
+		    border: 1px solid #ccc;
+		    border-radius: 3px;
+		}
+		button  
+		{
+		    width:30%;
+		    background-color: #000000;
+		    border: 1px solid #ffffff;
+		    color: white;
+		    font-size: 16px;
+		    padding: 5px;
+		    margin: 10px 0;
+		    border-radius: 3px;
+		}
+	</style>
+</body>
+</html>
